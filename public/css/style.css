@@ -4,9 +4,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
+    background: url('../img/123.jpg');
+}
+.content{
     max-width: 600px;
-    margin: 0 auto;
+    margin: 100px auto;
     padding: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 1px 1px 3px black;
+    border-radius: 3px;
 }
 header h1{
     font-size: 45px;
@@ -24,7 +30,7 @@ header h1{
     border-bottom: 1px solid silver;
 }
 .main-content{
-    height: 450px;
+    min-height: 200px;
 }
 .main-content form input{
     width: 50%;
@@ -64,5 +70,5 @@ footer p{
 img{
     margin: 10px;
     box-shadow: 1px 1px 5px black;
-    width: 400px;
+    width: 200px;
 }

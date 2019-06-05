@@ -5,16 +5,18 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        {{>header}}
-        <div class="main-content">
-            <p>Something gonna appear here</p>
-            <form>
-                <input placeholder="location" >
-                <button>Get</button>
-            </form>
-            <p id='result'></p>
+        <div class="content">
+            {{>header}}
+            <div class="main-content">
+                <p>Please enter location</p>
+                <form>
+                    <input placeholder="location" >
+                    <button>Get</button>
+                </form>
+                <p id='result'>Weather will display here..</p>
+            </div>
+            {{>footer}}
         </div>
-        {{>footer}}
         <script src="./js/app.js"></script>
     </body>
 </html>
