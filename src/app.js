@@ -8,6 +8,7 @@ const app = express()
 const publicDirectoryPath = path.join(__dirname , '../public')
 const viewPath = path.join(__dirname, '../templates/views')
 const partialsPath = path.join(__dirname, '../templates/partials')
+const port = process.env.PORT || 3000
 
 //Setup HandleBars For Dynamic COntenet From Views Directory
 app.set('view engine', 'hbs')
@@ -87,6 +88,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log('Server Starts')
+app.listen(port, () => {
+    console.log('Server Starts at : ' + port)
 })
